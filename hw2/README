@@ -1,0 +1,12 @@
+Name: Armin Graf
+
+All of the problems in the assignment prompts were solved.  
+
+The Makefile will build the speller app and the attacker programs when 'make' is invoked.  attacker1 tests command line options, and attacker2 tests stdin inputs.
+
+The LevenshteinDistance algorithm I used is from Wikipedia, as is the hashing function.
+
+The string trim() function is from http://en.wikipedia.org/wiki/Trimming_(computer_programming)
+
+The bases for the list and hashmap data structures were inspired by http://c.learncodethehardway.org/book/, but were modified extensively
+

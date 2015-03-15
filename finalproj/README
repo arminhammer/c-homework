@@ -1,0 +1,51 @@
+Name: Armin Graf
+Semester Project
+
+Some multithreading in ihttpd.c inspired from http://www.mario-konrad.ch/wiki/
+doku.php?id=programming:multithreading:tutorial-04
+//ihttpd.c based on http://cs.gmu.edu/~mabdulla/courses/2014/563/code/daemons/
+concurrent-echo-server.c
+
+Took file reading code from http://rosettacode.org/wiki/Read_entire_file#C
+
+The string trim() function is from http://en.wikipedia.org/wiki/
+Trimming_(computer_programming)
+
+==================================================
+All of the problems in the assignment prompts were solved.  
+
+The Makefile will build the ihttpd app and the attacker1 program when 'make' 
+is invoked.  attacker1 tests command line options.  I have also included 
+attacker2.sh, attacker3.sh, attacker4.sh, attacker5.sh, and attacker6.sh, 
+which are bash scripts that test HTTP inputs.  
+
+==================================================
+
+A sample config.cfg is provided.  You can use the -c or --config flags to feed
+a config file to the server.  Please use the format used in config.cfg
+
+==================================================
+
+The /mod folder is the location for dynamic modules.  rev.so is already
+available there (made with 'make').  By default the mod folder will be a
+subfolder of the document root, unless specified by -m.
+
+==================================================
+
+A number of test files are provided in the /testfiles folder.  When the 
+server starts up, they will be available at localhost:1080/testfiles/
+
+==================================================
+
+The ihttpd.log is generated at server startup in the document root if it
+does not already exist.  The server puts an flock on the log file at the start.
+
+==================================================
+
+The server can be started with ./ihttpd .  It will be moved to the background
+but stdout is not redirected, so it should still print out.  It can be 
+started as nohup ./ihttpd & as well.
+
+==================================================
+
+To stop the server, please kill -9 the process, or use killall ihttpd.

@@ -1,0 +1,14 @@
+Name: Armin Graf
+HW3
+
+All of the problems in the assignment prompts were solved.  
+
+The Makefile will build the arminsh app and the attacker programs when 'make' is invoked.  attacker1 tests command line options, and attacker2 tests stdin inputs.  make stacktest is there 
+to test the stack code, but is not meant to be executed
+
+The string trim() function is from http://en.wikipedia.org/wiki/Trimming_(computer_programming)
+
+The fork code is based on http://www2.cs.uregina.ca/~hamilton/courses/330/notes/unix/fork/fork7.cpp
+
+The shell will print out the current directory, followed by a $ sign.  This is meant to imitate bash behavior, and makes it easier
+for the user to tell in which directory they are currently in.
